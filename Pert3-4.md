@@ -558,6 +558,145 @@ Bulan dengan penjualan tertinggi: Jun (170 unit)
 
 ---
 
+## CARA MENJALANKAN DEMO
+
+Semua file demo dapat dijalankan langsung menggunakan Python. Berikut adalah langkah-langkah untuk menjalankan setiap demo:
+
+### Persiapan Awal
+
+1. **Pastikan Python sudah terinstall**
+   ```bash
+   python --version
+   ```
+   Jika belum terinstall, download dari [python.org](https://www.python.org/)
+
+2. **Buka terminal/command prompt**
+   - Windows: Tekan `Win + R`, ketik `cmd`, Enter
+   - Mac/Linux: Buka Terminal
+
+3. **Navigasi ke folder pert3-4**
+   ```bash
+   cd d:\_CodeDev\strukturdatadanalgoritma\pert3-4
+   ```
+
+### Menjalankan Demo 1: Array 1 Dimensi
+
+**Langkah-langkah:**
+
+1. Jalankan file demo1:
+   ```bash
+   python demo1_array_1d.py
+   ```
+
+2. **Apa yang akan ditampilkan:**
+   - Array nilai awal mahasiswa
+   - Operasi mengakses elemen array
+   - Operasi menambah dan mengubah elemen
+   - Statistik (rata-rata, nilai max, min)
+   - Array yang sudah diurutkan
+
+3. **Yang perlu diperhatikan:**
+   - Indeks array dimulai dari 0
+   - Perbedaan antara `sorted()` dan `.sort()`
+   - Cara menghitung statistik dengan fungsi built-in
+
+### Menjalankan Demo 2: Array 2 Dimensi
+
+**Langkah-langkah:**
+
+1. Jalankan file demo2:
+   ```bash
+   python demo2_array_2d.py
+   ```
+
+2. **Apa yang akan ditampilkan:**
+   - Matriks 3x3 dan cara mengaksesnya
+   - Operasi transpose matriks
+   - Penjumlahan per baris dan kolom
+   - Diagonal utama matriks
+   - Penjumlahan dua matriks
+
+3. **Yang perlu diperhatikan:**
+   - Akses elemen menggunakan `[baris][kolom]`
+   - Penggunaan nested loop untuk iterasi 2D
+   - List comprehension untuk operasi matriks
+
+### Menjalankan Demo 3: Array of Records
+
+**Langkah-langkah:**
+
+1. Jalankan file demo3:
+   ```bash
+   python demo3_array_of_records.py
+   ```
+
+2. **Apa yang akan ditampilkan:**
+   - Tabel data mahasiswa dengan NIM, nama, nilai, dan grade
+   - Pencarian mahasiswa terbaik
+   - Perhitungan rata-rata kelas
+   - Filter mahasiswa dengan grade A
+   - Data yang sudah diurutkan berdasarkan nama
+
+3. **Yang perlu diperhatikan:**
+   - Cara mendefinisikan class dengan `__init__`
+   - Method `__str__` untuk representasi string
+   - Method custom (`get_grade()`)
+   - Penggunaan lambda function untuk sorting
+
+### Menjalankan Demo 4: Aplikasi Praktis
+
+**Langkah-langkah:**
+
+1. Jalankan file demo4:
+   ```bash
+   python demo4_aplikasi_praktis.py
+   ```
+
+2. **Apa yang akan ditampilkan:**
+   - Tabel penjualan per produk dan bulan
+   - Tabel pendapatan dalam juta rupiah
+   - Analisis produk terlaris
+   - Analisis produk dengan pendapatan tertinggi
+   - Analisis bulan terbaik
+
+3. **Yang perlu diperhatikan:**
+   - Penggunaan array 2D untuk data real-world
+   - Format output yang rapi dengan alignment
+   - Perhitungan total dan analisis data
+   - Nested loop untuk iterasi data kompleks
+
+### Tips Menjalankan Demo
+
+1. **Jika menggunakan VS Code:**
+   - Buka file demo yang ingin dijalankan
+   - Klik kanan → "Run Python File in Terminal"
+   - Atau tekan `Ctrl + F5`
+
+2. **Jika menggunakan PyCharm:**
+   - Buka file demo
+   - Klik tombol Run (▶) atau tekan `Shift + F10`
+
+3. **Modifikasi dan Eksperimen:**
+   - Coba ubah nilai-nilai dalam array
+   - Tambahkan data baru
+   - Modifikasi fungsi untuk belajar lebih dalam
+
+### Troubleshooting
+
+**Error: "python: command not found"**
+- Pastikan Python sudah terinstall
+- Coba gunakan `python3` instead of `python`
+
+**Error: "No such file or directory"**
+- Pastikan Anda berada di folder yang benar
+- Gunakan `pwd` (Mac/Linux) atau `cd` (Windows) untuk cek lokasi
+
+**Error di kode:**
+- Pastikan tidak ada perubahan pada kode
+- Download ulang file demo jika perlu
+
+---
+
 ## LATIHAN SOAL
 
 ### Soal 1: Pengelolaan Data Buku Perpustakaan
