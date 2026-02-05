@@ -560,125 +560,92 @@ Bulan dengan penjualan tertinggi: Jun (170 unit)
 
 ## LATIHAN SOAL
 
-### Soal 1: Manajemen Inventori Toko
+### Soal 1: Pengelolaan Data Buku Perpustakaan
 
 **Deskripsi:**
-Anda diminta membuat program untuk mengelola inventori toko elektronik. Program harus dapat menyimpan data produk dan melakukan berbagai operasi.
+Buatlah program sederhana untuk mengelola data buku di perpustakaan menggunakan **array of records (class)**.
 
 **Spesifikasi:**
 
-1. Buatlah **class Produk** dengan atribut:
-   - `kode_produk` (string)
-   - `nama_produk` (string)
+1. Buatlah **class Buku** dengan atribut:
+   - `kode_buku` (string)
+   - `judul` (string)
+   - `pengarang` (string)
    - `stok` (integer)
-   - `harga` (integer)
 
-2. Implementasikan **array of records** untuk menyimpan minimal 5 produk
+2. Buatlah **array/list** untuk menyimpan minimal 5 data buku
 
 3. Program harus memiliki fungsi-fungsi berikut:
-   - `tambah_produk()`: Menambah produk baru ke inventori
-   - `tampilkan_semua()`: Menampilkan seluruh data produk dalam bentuk tabel
-   - `cari_produk(kode)`: Mencari produk berdasarkan kode produk
-   - `update_stok(kode, jumlah)`: Mengupdate stok produk (tambah/kurang)
-   - `produk_stok_rendah(batas)`: Menampilkan produk dengan stok di bawah batas tertentu
-   - `total_nilai_inventori()`: Menghitung total nilai inventori (stok × harga semua produk)
+   - `tampilkan_semua_buku()`: Menampilkan seluruh data buku dalam bentuk tabel
+   - `cari_buku(kode)`: Mencari dan menampilkan buku berdasarkan kode buku
+   - `buku_habis()`: Menampilkan daftar buku yang stoknya 0 (habis dipinjam)
+   - `total_buku()`: Menghitung total seluruh buku yang tersedia
 
 **Contoh Output yang Diharapkan:**
 ```
-=== INVENTORI TOKO ELEKTRONIK ===
+=== DATA BUKU PERPUSTAKAAN ===
 
-DATA PRODUK:
-Kode    Nama Produk          Stok    Harga       Total Nilai
--------------------------------------------------------------
-E001    Laptop ASUS          15      8000000     120000000
-E002    Mouse Logitech       50      150000      7500000
-E003    Keyboard Mechanical  30      500000      15000000
-E004    Monitor LG 24"       10      2000000     20000000
-E005    Webcam HD            5       300000      1500000
+Kode    Judul                    Pengarang           Stok
+------------------------------------------------------------
+B001    Python untuk Pemula      John Doe            5
+B002    Algoritma Dasar          Jane Smith          3
+B003    Struktur Data            Ahmad Zaki          0
+B004    Pemrograman Web          Siti Nurhaliza      7
+B005    Basis Data               Budi Santoso        2
 
-Total Nilai Inventori: Rp 164.000.000
+Total buku tersedia: 17 buku
 
-PRODUK DENGAN STOK RENDAH (< 20):
-- E004: Monitor LG 24" (Stok: 10)
-- E005: Webcam HD (Stok: 5)
+BUKU YANG HABIS DIPINJAM:
+- B003: Struktur Data (Pengarang: Ahmad Zaki)
 ```
 
-**Kriteria Penilaian:**
-- Struktur class yang benar (15%)
-- Implementasi array of records (15%)
-- Fungsi tambah dan tampilkan (20%)
-- Fungsi cari dan update stok (20%)
-- Fungsi analisis (stok rendah, total nilai) (20%)
-- Output yang rapi dan informatif (10%)
-
----
-
-### Soal 2: Analisis Nilai Ujian Multi-Mata Kuliah
+### Soal 2: Nilai Ujian Mahasiswa
 
 **Deskripsi:**
-Anda diminta membuat program untuk menganalisis nilai ujian mahasiswa dalam beberapa mata kuliah menggunakan **array 2 dimensi**.
+Buatlah program untuk mengolah nilai ujian mahasiswa menggunakan **array 2 dimensi**.
 
 **Spesifikasi:**
 
 1. Buatlah program yang menyimpan nilai ujian untuk:
-   - **5 mahasiswa** (baris)
-   - **4 mata kuliah** (kolom): Matematika, Fisika, Pemrograman, Basis Data
+   - **4 mahasiswa** (baris)
+   - **3 mata kuliah** (kolom): Matematika, Pemrograman, Basis Data
 
 2. Data nilai dapat berupa array 2D, contoh:
    ```python
    # Baris = Mahasiswa, Kolom = Mata Kuliah
    nilai = [
-       [85, 78, 90, 88],  # Mahasiswa 1
-       [75, 82, 85, 80],  # Mahasiswa 2
-       [90, 88, 95, 92],  # Mahasiswa 3
-       [70, 75, 78, 72],  # Mahasiswa 4
-       [88, 85, 90, 87]   # Mahasiswa 5
+       [85, 90, 88],  # Mahasiswa 1
+       [75, 80, 82],  # Mahasiswa 2
+       [90, 95, 92],  # Mahasiswa 3
+       [70, 75, 78]   # Mahasiswa 4
    ]
    ```
 
 3. Program harus dapat menghitung dan menampilkan:
-   - **Tabel nilai** lengkap dengan nama mahasiswa dan mata kuliah
-   - **Rata-rata nilai per mahasiswa** (rata-rata horizontal)
-   - **Rata-rata nilai per mata kuliah** (rata-rata vertikal)
+   - **Tabel nilai** mahasiswa
+   - **Rata-rata nilai per mahasiswa**
+   - **Rata-rata nilai per mata kuliah**
    - **Mahasiswa dengan rata-rata tertinggi**
-   - **Mata kuliah dengan rata-rata terendah**
-   - **Jumlah mahasiswa yang lulus** (rata-rata >= 75) dan **tidak lulus** (rata-rata < 75)
+   - **Jumlah mahasiswa yang lulus** (rata-rata >= 75)
 
 **Contoh Output yang Diharapkan:**
 ```
-=== ANALISIS NILAI UJIAN ===
+=== NILAI UJIAN MAHASISWA ===
 
-TABEL NILAI:
-Mahasiswa    Matematika  Fisika  Pemrograman  Basis Data  Rata-rata
-----------------------------------------------------------------------
-Mahasiswa 1      85        78        90           88        85.25
-Mahasiswa 2      75        82        85           80        80.50
-Mahasiswa 3      90        88        95           92        91.25
-Mahasiswa 4      70        75        78           72        73.75
-Mahasiswa 5      88        85        90           87        87.50
+Mahasiswa    Matematika  Pemrograman  Basis Data  Rata-rata
+-------------------------------------------------------------
+Mahasiswa 1      85          90           88        87.67
+Mahasiswa 2      75          80           82        79.00
+Mahasiswa 3      90          95           92        92.33
+Mahasiswa 4      70          75           78        74.33
 
-----------------------------------------------------------------------
-Rata-rata MK:    81.60     81.60     87.60        83.80     83.65
+-------------------------------------------------------------
+Rata-rata MK:    80.00       85.00        85.00
 
-=== ANALISIS ===
-Mahasiswa terbaik: Mahasiswa 3 (Rata-rata: 91.25)
-Mata kuliah tersulit: Matematika & Fisika (Rata-rata: 81.60)
-Mahasiswa lulus (rata-rata >= 75): 4 orang
-Mahasiswa tidak lulus (rata-rata < 75): 1 orang
-
-DAFTAR MAHASISWA TIDAK LULUS:
-- Mahasiswa 4 (Rata-rata: 73.75)
+=== HASIL ANALISIS ===
+Mahasiswa terbaik: Mahasiswa 3 (Rata-rata: 92.33)
+Jumlah mahasiswa lulus (>= 75): 3 orang
 ```
-
-**Kriteria Penilaian:**
-- Struktur array 2D yang benar (15%)
-- Perhitungan rata-rata per mahasiswa (20%)
-- Perhitungan rata-rata per mata kuliah (20%)
-- Pencarian nilai tertinggi/terendah (20%)
-- Analisis kelulusan (15%)
-- Output yang rapi dan informatif (10%)
-
----
 
 ## TIPS PENGERJAAN
 
