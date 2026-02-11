@@ -126,6 +126,107 @@ Stack digunakan dalam berbagai aplikasi:
 
 ## DEMO PYTHON
 
+> **⚠️ PERATURAN DEMO AWAL:**
+> Demo Awal 1-4 di bawah ini ditampilkan sebagai **gambar** (tidak bisa di-copy-paste).
+> Mahasiswa **WAJIB mengetik sendiri** kode program secara manual di Python.
+> **Dilarang copy-paste!** Tujuannya agar mahasiswa memahami setiap baris kode.
+
+---
+
+### Demo Awal 1: Mengenal Push dan Pop
+
+**Tujuan:** Memahami cara kerja `push` (`append`) dan `pop` pada stack menggunakan list Python.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 1 - Push dan Pop](images/pert5-6/demo_awal_1.png)
+
+**Output yang Diharapkan:**
+```
+Isi tumpukan: [5, 10, 15]
+Elemen TOP: 15
+Elemen yang di-pop: 15
+Isi tumpukan setelah pop: [5, 10]
+Jumlah elemen: 2
+```
+
+---
+
+### Demo Awal 2: Stack Kosong dan Pengecekan
+
+**Tujuan:** Memahami cara mengecek apakah stack kosong dan menangani pop dari stack kosong.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 2 - Cek Stack Kosong](images/pert5-6/demo_awal_2.png)
+
+**Output yang Diharapkan:**
+```
+Stack KOSONG
+Setelah push 100, 200: [100, 200]
+Stack TIDAK KOSONG, jumlah: 2
+Pop: 200
+Pop: 100
+Setelah pop semua: []
+Apakah kosong? True
+```
+
+---
+
+### Demo Awal 3: Membalik Kata dengan Stack
+
+**Tujuan:** Menggunakan prinsip LIFO pada stack untuk membalik urutan huruf dalam sebuah kata.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 3 - Balik Kata](images/pert5-6/demo_awal_3.png)
+
+**Output yang Diharapkan:**
+```
+Push: U - Stack: ['U']
+Push: B - Stack: ['U', 'B']
+Push: M - Stack: ['U', 'B', 'M']
+Pop: M - Hasil: M
+Pop: B - Hasil: MB
+Pop: U - Hasil: MBU
+
+Kata asli   : UBM
+Kata terbalik: MBU
+```
+
+---
+
+### Demo Awal 4: Cek Palindrome dengan Stack
+
+**Tujuan:** Menggunakan stack untuk mengecek apakah sebuah kata adalah **palindrome** (dibaca sama dari depan dan belakang).
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 4 - Palindrome](images/pert5-6/demo_awal_4.png)
+
+**Output yang Diharapkan:**
+```
+=== CEK PALINDROME ===
+
+Kata        : katak
+Kata terbalik: katak
+Hasil: PALINDROME!
+
+Kata        : level
+Kata terbalik: level
+Hasil: PALINDROME!
+
+Kata        : python
+Kata terbalik: nohtyp
+Hasil: BUKAN palindrome
+
+Kata        : malam
+Kata terbalik: malam
+Hasil: PALINDROME!
+```
+
+---
+
 ### Demo 1: Implementasi Dasar Stack
 
 ```python
