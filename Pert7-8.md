@@ -169,6 +169,113 @@ Queue digunakan dalam berbagai aplikasi:
 
 ## DEMO PYTHON
 
+> **⚠️ PERATURAN DEMO AWAL:**
+> Demo Awal 1-4 di bawah ini ditampilkan sebagai **gambar** (tidak bisa di-copy-paste).
+> Mahasiswa **WAJIB mengetik sendiri** kode program secara manual di Python.
+> **Dilarang copy-paste!** Tujuannya agar mahasiswa memahami setiap baris kode.
+
+---
+
+### Demo Awal 1: Mengenal Enqueue dan Dequeue
+
+**Tujuan:** Memahami cara kerja `enqueue` (`append`) dan `dequeue` (`pop(0)`) pada queue menggunakan list Python.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 1 - Enqueue dan Dequeue](images/pert7-8/demo_awal_1.png)
+
+**Output yang Diharapkan:**
+```
+Isi antrian: [10, 20, 30]
+Elemen FRONT: 10
+Elemen REAR: 30
+Elemen yang di-dequeue: 10
+Isi antrian setelah dequeue: [20, 30]
+Jumlah elemen: 2
+```
+
+---
+
+### Demo Awal 2: Queue Kosong dan Pengecekan
+
+**Tujuan:** Memahami cara mengecek apakah queue kosong dan proses dequeue secara FIFO.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 2 - Cek Queue Kosong](images/pert7-8/demo_awal_2.png)
+
+**Output yang Diharapkan:**
+```
+Queue KOSONG
+Setelah enqueue: ['Budi', 'Ani', 'Citra']
+Queue TIDAK KOSONG, jumlah: 3
+
+Proses dequeue (FIFO):
+Keluar: Budi
+Keluar: Ani
+Keluar: Citra
+Setelah dequeue semua: []
+Apakah kosong? True
+```
+
+---
+
+### Demo Awal 3: Simulasi Antrian Kasir
+
+**Tujuan:** Menggunakan queue untuk mensimulasikan antrian pelanggan di kasir.
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 3 - Antrian Kasir](images/pert7-8/demo_awal_3.png)
+
+**Output yang Diharapkan:**
+```
+Nomor 1 - Budi masuk antrian
+Nomor 2 - Ani masuk antrian
+Nomor 3 - Citra masuk antrian
+Nomor 4 - Doni masuk antrian
+
+Antrian saat ini: ['Budi', 'Ani', 'Citra', 'Doni']
+Yang dilayani pertama: Budi
+Yang terakhir: Doni
+
+--- Kasir mulai melayani ---
+Melayani: Budi
+Melayani: Ani
+
+Sisa antrian: ['Citra', 'Doni']
+Jumlah menunggu: 2
+```
+
+---
+
+### Demo Awal 4: Perbedaan Queue (FIFO) vs Stack (LIFO)
+
+**Tujuan:** Memahami perbedaan urutan keluar antara Queue (FIFO) dan Stack (LIFO).
+
+**Instruksi:** Lihat gambar di bawah, lalu **ketik ulang** kode tersebut di Python dan jalankan.
+
+![Demo Awal 4 - FIFO vs LIFO](images/pert7-8/demo_awal_4.png)
+
+**Output yang Diharapkan:**
+```
+Data masuk: [1, 2, 3, 4, 5]
+
+=== QUEUE (FIFO) ===
+Queue: [1, 2, 3, 4, 5]
+Urutan keluar: [1, 2, 3, 4, 5]
+
+=== STACK (LIFO) ===
+Stack: [1, 2, 3, 4, 5]
+Urutan keluar: [5, 4, 3, 2, 1]
+
+Kesimpulan:
+Queue: yang masuk pertama, keluar pertama
+Stack: yang masuk terakhir, keluar pertama
+```
+
+---
+
 ### Demo 1: Implementasi Dasar Queue
 
 ```python
